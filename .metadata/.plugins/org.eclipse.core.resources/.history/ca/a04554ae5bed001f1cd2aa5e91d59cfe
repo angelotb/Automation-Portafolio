@@ -1,0 +1,39 @@
+package ANGDemo;
+
+public class MethodsDemo {
+
+	public static void main(String[] args) {
+		
+		MethodsDemo md = new MethodsDemo();
+		 System.out.println(md.addNumbers(5, 10));
+		 md.diffParameters("this is a string", 12,23);
+		 ,
+
+	}
+
+	public static void doLogin()
+	{
+	 
+		System.out.println("Login Successful");
+		
+	}
+	
+	public void doLogout()
+	{
+		doLogin();
+		System.out.println("Logout Successful");
+		
+	}
+	public int addNumbers(int x, int y) {
+		// int z= x + y;
+		return x+y;
+	}
+	
+	public void diffParameters(String s, int i, float f)
+	{
+		System.out.println(s);
+		System.out.println(i);
+		System.out.println(f);
+	}
+	
+}

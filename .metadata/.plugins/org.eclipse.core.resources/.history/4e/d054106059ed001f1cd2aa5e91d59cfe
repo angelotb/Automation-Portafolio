@@ -1,0 +1,30 @@
+package ANGDemo;
+
+public class MethodsDemo {
+
+	public static void main(String[] args) {
+		
+		MethodsDemo md = new MethodsDemo();
+		md.doLogin();
+		md.doLogin();
+		md.doLogin();
+		md.doLogin();
+		md.doLogout();
+
+	}
+
+	public void doLogin()
+	{
+	 
+		System.out.println("Login Successful");
+		
+	}
+	
+	public void doLogout()
+	{
+		
+		System.out.println("Logout Successful");
+		
+	}
+	
+}

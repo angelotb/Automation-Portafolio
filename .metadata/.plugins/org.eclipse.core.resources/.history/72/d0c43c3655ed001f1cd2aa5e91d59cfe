@@ -1,0 +1,26 @@
+package ANGDemo;
+
+public class MethodsDemo {
+
+	public static void main(String[] args) {
+		
+		MethodsDemo md = new MethodsDemo();
+		md.doLogin();
+		md.doLogout();
+
+	}
+
+	public void doLogin()
+	{
+	 
+		System.out.println();
+		
+	}
+	
+	public void doLogout()
+	{
+		
+		
+	}
+	
+}
