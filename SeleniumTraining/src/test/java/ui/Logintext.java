@@ -24,12 +24,27 @@ public static WebDriver driver ;
 		driver = new ChromeDriver ();
 		
 		}
-		
 		driver.get("https://www.saucedemo.com/");
-		driver.findElement(By.id("user-name")).sendKeys("problem_user");
+		driver.manage().window().maximize();
+		
+		String currenturl = driver.getCurrentUrl();
+		System.out.println(currenturl);
+		
+		
+	  driver.findElement(By.id("user-name")).sendKeys("standard_user");
 		driver.findElement(By.id("password")).sendKeys("secret_sauce");
 		driver.findElement(By.xpath("//*[@id=\"login-button\"]")).click();
-		driver.close();
+		
+	  driver.findElements(By.xpath("//div[@class='inventory_list']/div"));
+		 
+		 
+		 driver.navigate().to("https://www.sugarcrm.com/");
+		 String windowhandle = driver.getWindowHandle();
+		 System.out.println(windowhandle);
+		 
+		
+		driver.quit();
+		
 	}
 
 }
