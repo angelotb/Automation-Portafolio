@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Reading_browser_details_from_testng_xmL" class="navigator-link">
-              <span class="suite-name border-passed">Reading browser details from testng xmL</span>
+              <span class="suite-name border-failed">Reading browser details from testng xmL</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Reading_browser_details_from_testng_xmL" class="hide-methods passed suite-Reading_browser_details_from_testng_xmL"> (hide)</a> <!-- hide-methods passed suite-Reading_browser_details_from_testng_xmL -->
-                      <a href="#" panel-name="suite-Reading_browser_details_from_testng_xmL" class="show-methods passed suite-Reading_browser_details_from_testng_xmL"> (show)</a> <!-- show-methods passed suite-Reading_browser_details_from_testng_xmL -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Reading_browser_details_from_testng_xmL" class="hide-methods failed suite-Reading_browser_details_from_testng_xmL"> (hide)</a> <!-- hide-methods failed suite-Reading_browser_details_from_testng_xmL -->
+                      <a href="#" panel-name="suite-Reading_browser_details_from_testng_xmL" class="show-methods failed suite-Reading_browser_details_from_testng_xmL"> (show)</a> <!-- show-methods failed suite-Reading_browser_details_from_testng_xmL -->
                     </span>
-                    <div class="method-list-content passed suite-Reading_browser_details_from_testng_xmL">
+                    <div class="method-list-content failed suite-Reading_browser_details_from_testng_xmL">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Reading_browser_details_from_testng_xmL" title="ui.Logintext" class="method navigator-link" hash-for-method="LaunchApplication(chrome)">LaunchApplication(chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Reading_browser_details_from_testng_xmL -->
+                    </div> <!-- method-list-content failed suite-Reading_browser_details_from_testng_xmL -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,9 +118,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Reading_browser_details_from_testng_xmL" class="panel Reading_browser_details_from_testng_xmL">
-          <div class="suite-Reading_browser_details_from_testng_xmL-class-passed">
+          <div class="suite-Reading_browser_details_from_testng_xmL-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">ui.Logintext</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -130,10 +130,33 @@
                   </a> <!-- LaunchApplication(chrome) -->
                   <span class="method-name">LaunchApplication</span>
                   <span class="parameters">(chrome)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.89)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [51600f35f8d0b39f6495e692cf5908a9, getCurrentWindowHandle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\ANGELO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53326}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53326/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 51600f35f8d0b39f6495e692cf5908a9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.getWindowHandle(RemoteWebDriver.java:468)
+	at ui.Logintext.LaunchApplication(Logintext.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Reading_browser_details_from_testng_xmL-class-passed -->
+          </div> <!-- suite-Reading_browser_details_from_testng_xmL-class-failed -->
         </div> <!-- panel Reading_browser_details_from_testng_xmL -->
         <div panel-name="test-xml-Reading_browser_details_from_testng_xmL" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -191,12 +214,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LaunchApplication')
 data.setCell(0, 2, 'ui.Logintext')
-data.setCell(0, 3, 11544);
+data.setCell(0, 3, 7277);
 window.suiteTableData['Reading_browser_details_from_testng_xmL']= { tableData: data, tableDiv: 'times-div-Reading_browser_details_from_testng_xmL'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Reading_browser_details_from_testng_xmL">
               </div> <!-- times-div-Reading_browser_details_from_testng_xmL -->
             </div> <!-- times-div -->
@@ -224,6 +247,8 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">ui.Logintext</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">LaunchApplication(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
