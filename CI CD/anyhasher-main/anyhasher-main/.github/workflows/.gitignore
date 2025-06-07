@@ -1,0 +1,7 @@
+node_modules
+.env
+.vscode/
+*.log
+AppData/
+Thumbs.db
+.DS_Store
